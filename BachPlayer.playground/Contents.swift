@@ -32,4 +32,4 @@ do {
     print("could not start audio engine")
 }
 
-// midiPlayer?.stop()
+midiPlayer?.stop()
