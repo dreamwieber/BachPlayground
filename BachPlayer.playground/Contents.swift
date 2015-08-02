@@ -8,6 +8,9 @@ XCPSetExecutionShouldContinueIndefinitely(true)
 
 let audioEngine = AVAudioEngine()
 let mixer = audioEngine.mainMixerNode
+
+// Sampler not actually used to play MIDI,
+// but AVAudioEngine needs at least one input
 let sampler: AVAudioUnitSampler = AVAudioUnitSampler()
 
 audioEngine.attachNode(sampler)
